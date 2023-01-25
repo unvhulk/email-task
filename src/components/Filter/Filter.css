@@ -1,0 +1,60 @@
+.head {
+	margin: 2.2rem 2.5rem 0.8rem 2.5rem;
+	height: 4vh;
+	display: grid;
+	grid-template-columns: 90% 10%;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--black);
+}
+
+.filtered {
+	outline: 1.4px solid var(--border);
+	border-radius: 1rem;
+	padding: 2px 1rem;
+	background-color: var(--filter);
+	color: var(--text);
+	margin-left: 0.5rem;
+}
+
+.filter > span:first-child {
+	margin-left: 2rem;
+}
+.filter > span {
+	margin-left: 1.5rem;
+	cursor: pointer;
+}
+.ClearFilter {
+	color: blue;
+}
+.ClearFilter:hover {
+	text-decoration: underline;
+}
+
+.paginate {
+	display: flex;
+	justify-self: end;
+	align-self: center;
+}
+.pageNo {
+	margin: 0 0.5rem;
+}
+.pageNav {
+	border: 1px solid var(--accent);
+	border-radius: 50%;
+	padding: 0.5rem 0.8rem;
+	background-color: var(--accent);
+	color: var(--white);
+}
+.pageNav:hover {
+	cursor: pointer;
+	border: 1px solid var(--accent);
+}
+.disabled {
+	border: 1px solid var(--text);
+	background-color: var(--text);
+}
+.pageNav.disabled:hover {
+	border: 1px solid var(--accent);
+}

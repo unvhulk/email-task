@@ -1,0 +1,55 @@
+body {
+	--accent: #e54065;
+	--background: #f4f5f9;
+	--border: #cfd2dc;
+	--text: #636363;
+	--filter: #e1e4ea;
+	--read: #f2f2f2;
+	--black: #000;
+	--white: #fff;
+	background-color: var(--background);
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.App {
+	display: grid;
+	color: var(--text);
+	font-family: sans-serif;
+	font-size: 0.9rem;
+}
+
+main {
+	display: grid;
+	height: 88vh;
+}
+
+.BodyColumns {
+	grid-template-columns: 38% 62%;
+}
+.master {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+}
+
+.master::-webkit-scrollbar {
+	display: none;
+}
+.slave {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+}
+
+.slave::-webkit-scrollbar {
+	display: none;
+}
+.EmptyState {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	font-size: x-large;
+}

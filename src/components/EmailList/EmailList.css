@@ -1,0 +1,75 @@
+.ListCompContainer {
+	grid-column: 1/2;
+	display: flex;
+	outline: 1.4px solid var(--border);
+	margin: 1rem 1rem 1rem 2.5rem;
+	padding: 0 1rem 1rem 1rem;
+	border-radius: 5px;
+	line-height: 1.2rem;
+	background-color: var(--white);
+	gap: 0.8rem;
+	overflow: hidden;
+}
+
+.ListCompContainer:hover {
+	outline: 1px solid var(--accent);
+	cursor: pointer;
+}
+
+.selectBorder {
+	outline: 1.4px solid var(--accent);
+}
+
+.avatar-container {
+	display: flex;
+	justify-content: center;
+	padding: 10px 5px;
+}
+
+.avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: x-large;
+	height: 2.8rem;
+	width: 2.8rem;
+	border: 1px solid var(--accent);
+	border-radius: 5rem;
+	background-color: var(--accent);
+	color: var(--white);
+}
+
+.list-container {
+	overflow: hidden;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.list-container > div {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.list-container > div > span {
+	font-weight: 600;
+}
+
+.description {
+	line-height: 2rem;
+}
+
+.read {
+	background-color: var(--read);
+}
+
+.favorite {
+	color: var(--accent);
+	font-weight: 600;
+	font-size: 0.8rem;
+	margin-left: 1rem;
+}
+.inline {
+	display: flex;
+	gap: 10px;
+}

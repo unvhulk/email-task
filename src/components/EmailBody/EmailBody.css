@@ -1,0 +1,57 @@
+.EmailBodyCompContainer {
+	grid-column: 2/3;
+	display: grid;
+	outline: 1.4px solid var(--border);
+	border-radius: 5px;
+	background-color: var(--white);
+	margin: 1rem 3rem 1rem 1rem;
+}
+
+.removeContainer {
+	display: none;
+}
+
+.header-container {
+	display: grid;
+	grid-template-columns: 1fr 6fr 2fr;
+	align-items: baseline;
+	align-self: baseline;
+	padding-top: 1.5rem;
+}
+
+.avatar.emailBody {
+	margin: auto;
+}
+
+.favoriteButton {
+	display: flex;
+	justify-self: start;
+	cursor: pointer;
+	padding: 5px 0.8rem;
+	font-size: 0.7rem;
+	border-radius: 1rem;
+	border: 1px solid var(--accent);
+	background-color: var(--accent);
+	color: var(--white);
+}
+
+.heading > span {
+	font-size: x-large;
+	font-weight: 600;
+}
+.date.emailBody {
+	grid-column: 2/3;
+	font-size: 0.8rem;
+}
+
+.body.emailBody {
+	display: grid;
+	grid-template-columns: 10% 90%;
+}
+.body.emailBody > .description {
+	grid-column: 2/3;
+	white-space: pre-wrap;
+	line-height: 1.18rem;
+	padding: 1rem 4rem 1rem 0.5rem;
+	font-size: 0.8rem;
+}
